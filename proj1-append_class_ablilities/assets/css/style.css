@@ -1,0 +1,121 @@
+button {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-color: white;
+    font-size: x-large;
+}
+
+body {
+    background-image: url('../images/background.jpg');
+}
+
+h1 {
+    color: white;
+}
+
+
+header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: xx-large;
+    border-style: inset;
+}
+
+label { 
+    color: black;
+}
+
+li {
+    display: inline-block;
+    margin-right: var(--m-r1);
+    font-size: x-large;
+    padding: 8px;
+}
+
+nav {
+    display: block;
+}
+
+
+.output {
+    color: white;
+}
+
+.custom-font {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+
+.gallery { 
+    border-radius: 5%;
+    display: block;
+    position : relative;
+    width: 50%;
+    border: 3px solid black;
+    padding: 5px; }
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: black;
+    border-style: inset;
+
+}
+
+p1 { 
+    color: red;
+    position : relative;
+    left: 200px;
+}
+
+p2 { 
+    color: red;
+    position: relative;
+    left : 300px;
+    bottom : 70px;
+
+    
+}
+
+
+.desc {
+    color : red;
+    font-size: 12px;
+}
+
+.traits,
+.abilities,
+.skills,
+.spell{
+    background-color: lightgrey;
+  width: 250px;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 20px;
+  left : 300px;
+  position : relative;
+  bottom : 200px;
+}
