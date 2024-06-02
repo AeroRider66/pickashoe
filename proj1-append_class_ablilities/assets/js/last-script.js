@@ -165,12 +165,12 @@ const classSpecificInfoLvl2 = function() {
         //tags for HTML
         const { 
             level: wizardLevel } 
-        = levelArray2[0];
+        = levelArray2[1];
         console.log("Wizard Level: ", wizardLevel);
         
         const {
             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
-            = levelArray2[0].spellcasting;
+            = levelArray2[1].spellcasting;
         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
         console.log("Level 1 Spell Slots: ", spellsLevel_1);
         console.log("Level 2 Spell Slots: ", spellsLevel_2);
@@ -178,7 +178,7 @@ const classSpecificInfoLvl2 = function() {
 
         const {
             arcane_recovery_levels: arcaneRecovery } 
-            = levelArray2[0].class_specific;
+            = levelArray2[1].class_specific;
             console.log("Level Arcane Recovery: ", arcaneRecovery);
         }
     )
@@ -195,12 +195,12 @@ const classSpecificInfoLvl3 = function() {
         //tags for HTML
         const { 
             level: wizardLevel } 
-        = levelArray3[0];
+        = levelArray3[2];
         console.log("Wizard Level: ", wizardLevel);
         
         const {
             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
-            = levelArray3[0].spellcasting;
+            = levelArray3[2].spellcasting;
         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
         console.log("Level 1 Spell Slots: ", spellsLevel_1);
         console.log("Level 2 Spell Slots: ", spellsLevel_2);
@@ -208,7 +208,7 @@ const classSpecificInfoLvl3 = function() {
 
         const {
             arcane_recovery_levels: arcaneRecovery } 
-            = levelArray3[0].class_specific;
+            = levelArray3[2].class_specific;
             console.log("Level Arcane Recovery: ", arcaneRecovery);
         }
     )
@@ -225,12 +225,12 @@ const classSpecificInfoLvl4 = function() {
         //tags for HTML
         const { 
             level: wizardLevel } 
-        = levelArray4[0];
+        = levelArray4[3];
         console.log("Wizard Level: ", wizardLevel);
         
         const {
             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
-            = levelArray4[0].spellcasting;
+            = levelArray4[3].spellcasting;
         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
         console.log("Level 1 Spell Slots: ", spellsLevel_1);
         console.log("Level 2 Spell Slots: ", spellsLevel_2);
@@ -238,7 +238,7 @@ const classSpecificInfoLvl4 = function() {
 
         const {
             arcane_recovery_levels: arcaneRecovery } 
-            = levelArray4[0].class_specific;
+            = levelArray4[3].class_specific;
             console.log("Level Arcane Recovery: ", arcaneRecovery);
         }
     )
@@ -254,22 +254,22 @@ const classSpecificInfoLvl5 = function() {
 
         //tags for HTML
         const { 
-            level: wizardLevel } 
-        = levelArray5[0];
-        console.log("Wizard Level: ", wizardLevel);
+            level: wizardLevel[4] } 
+        = levelArray5[4];
+        console.log("Wizard Level: ", wizardLevel)[4];
         
         const {
-            cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
-            = levelArray5[0].spellcasting;
-        console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
-        console.log("Level 1 Spell Slots: ", spellsLevel_1);
-        console.log("Level 2 Spell Slots: ", spellsLevel_2);
-        console.log("Level 3 Spell Slots: ", spellsLevel_3);
+            cantrips_known: level_1Cantrips[4], spell_slots_level_1: spellsLevel_1[4], spell_slots_level_2: spellsLevel_2[4], spell_slots_level_3[4]: spellsLevel_3 } 
+            = levelArray5[4].spellcasting;
+        console.log("Level 1 Cantrip Slots: ", level_1Cantrips[4]);
+        console.log("Level 1 Spell Slots: ", spellsLevel_1[4]);
+        console.log("Level 2 Spell Slots: ", spellsLevel_2[4]);
+        console.log("Level 3 Spell Slots: ", spellsLevel_3)[4];
 
         const {
-            arcane_recovery_levels: arcaneRecovery } 
-            = levelArray5[0].class_specific;
-            console.log("Level Arcane Recovery: ", arcaneRecovery);
+            arcane_recovery_levels: arcaneRecovery[4] } 
+            = levelArray5[4].class_specific;
+            console.log("Leel Arcane Recovery: ", arcaneRecovery[4]);
         }
     )
 }

@@ -1,5 +1,21 @@
 const buttonEL = document.getElementById('clickMe');
 const information = document.getElementById('information');
+const raceHuman = document.getElementById('raceOne');
+const raceDwarf = document.getElementById('raceTwo');
+const raceElf = document.getElementById('raceThree');
+const raceHalfling = document.getElementById('raceFour');
+const classFighter = document.getElementById('classOne');
+const classBarbarian = document.getElementById('classTwo');
+const classWizard = document.getElementById('classThree');
+const classRanger = document.getElementById('classFour');
+const submitBtn = document.getElementById('modelSubmitBtn');
+
+let characterObject = {
+    name: '',
+    prof: '',
+    lang: '',
+    traits: ''
+} 
 
 
 
