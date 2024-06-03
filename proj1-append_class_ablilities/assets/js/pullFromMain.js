@@ -20,10 +20,9 @@ let characterObject = {
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++ START class abilities WIZARD  +++++++++++++++++++++
 
-
-const classSpecificInfoLvl1 = function() {
+const wizardSpecificInfoLvl1 = function() {
     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
     .then(function(response) {
          return response.json()
@@ -53,8 +52,7 @@ const classSpecificInfoLvl1 = function() {
     )
 }
 
-
-const classSpecificInfoLvl2 = function() {
+const wizardSpecificInfoLvl2 = function() {
     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
     .then(function(response) {
          return response.json()
@@ -84,7 +82,7 @@ const classSpecificInfoLvl2 = function() {
     )
 }
 
-const classSpecificInfoLvl3 = function() {
+const wizardSpecificInfoLvl3 = function() {
     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
     .then(function(response) {
          return response.json()
@@ -114,7 +112,7 @@ const classSpecificInfoLvl3 = function() {
     )
 }
 
-const classSpecificInfoLvl4 = function() {
+const wizardSpecificInfoLvl4 = function() {
     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
     .then(function(response) {
          return response.json()
@@ -144,7 +142,7 @@ const classSpecificInfoLvl4 = function() {
     )
 }
 
-const classSpecificInfoLvl5 = function() {
+const wizardSpecificInfoLvl5 = function() {
     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
     .then(function(response) {
          return response.json()
@@ -174,11 +172,174 @@ const classSpecificInfoLvl5 = function() {
     )
 }
 
+//+++++++++++++++++++ END class abilites WIZARD +++++++++++++++//
+
+//++++++++++++++ START class abilities RANGER  +++++++++++++++++++++
+
+// const rangerSpecificInfoLvl1 = function() {
+//     fetch("https://www.dnd5eapi.co/api/classes/ranger/levels")
+//     .then(function(response) {
+//          return response.json()
+//     })
+//     .then(function(levelArray1) {
+//         console.log("After json", levelArray1);
+
+//         //tags for HTML
+//         const { 
+//             level: rangerLevel } 
+//         = levelArray1[0];
+//         console.log("Ranger Level: ", rangerLevel);
+        
+//         const {
+//             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
+//             = levelArray1[0].spellcasting;
+//         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
+//         console.log("Level 1 Spell Slots: ", spellsLevel_1);
+//         console.log("Level 2 Spell Slots: ", spellsLevel_2);
+//         console.log("Level 3 Spell Slots: ", spellsLevel_3);
+
+//         const {
+//             favored_enemies: favoredEnemies, favored_terrain: favoredTerrain } 
+//             = levelArray1[0].class_specific;
+//             console.log("Favored Enemies: ", favoredEnemies);
+//             console.log("Favored Terrain: ", favoredTerrain);
+//         }
+//     )
+// }
+
+// const rangerSpecificInfoLvl2 = function() {
+//     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
+//     .then(function(response) {
+//          return response.json()
+//     })
+//     .then(function(levelArray2) {
+//         console.log("After json", levelArray2);
+
+//         //tags for HTML
+//         const { 
+//             level: rangerLevel } 
+//         = levelArray1[0];
+//         console.log("Ranger Level: ", rangerLevel);
+        
+//         const {
+//             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
+//             = levelArray1[0].spellcasting;
+//         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
+//         console.log("Level 1 Spell Slots: ", spellsLevel_1);
+//         console.log("Level 2 Spell Slots: ", spellsLevel_2);
+//         console.log("Level 3 Spell Slots: ", spellsLevel_3);
+
+//         const {
+//             favored_enemies: favoredEnemies, favored_terrain: favoredTerrain } 
+//             = levelArray1[0].class_specific;
+//             console.log("Favored Enemies: ", favoredEnemies);
+//             console.log("Favored Terrain: ", favoredTerrain);
+//         }
+//     )
+// }
+
+// const rangerSpecificInfoLvl3 = function() {
+//     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
+//     .then(function(response) {
+//          return response.json()
+//     })
+//     .then(function(levelArray3) {
+//         console.log("After json", levelArray3);
+
+//         //tags for HTML
+//         const { 
+//             level: rangerLevel } 
+//         = levelArray1[0];
+//         console.log("Ranger Level: ", rangerLevel);
+        
+//         const {
+//             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
+//             = levelArray1[0].spellcasting;
+//         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
+//         console.log("Level 1 Spell Slots: ", spellsLevel_1);
+//         console.log("Level 2 Spell Slots: ", spellsLevel_2);
+//         console.log("Level 3 Spell Slots: ", spellsLevel_3);
+
+//         const {
+//             favored_enemies: favoredEnemies, favored_terrain: favoredTerrain } 
+//             = levelArray1[0].class_specific;
+//             console.log("Favored Enemies: ", favoredEnemies);
+//             console.log("Favored Terrain: ", favoredTerrain);
+//         }
+//     )
+// }
+
+// const rangerSpecificInfoLvl4 = function() {
+//     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
+//     .then(function(response) {
+//          return response.json()
+//     })
+//     .then(function(levelArray4) {
+//         console.log("After json", levelArray4);
+
+//         //tags for HTML
+//         const { 
+//             level: rangerLevel } 
+//         = levelArray1[0];
+//         console.log("Ranger Level: ", rangerLevel);
+        
+//         const {
+//             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
+//             = levelArray1[0].spellcasting;
+//         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
+//         console.log("Level 1 Spell Slots: ", spellsLevel_1);
+//         console.log("Level 2 Spell Slots: ", spellsLevel_2);
+//         console.log("Level 3 Spell Slots: ", spellsLevel_3);
+
+//         const {
+//             favored_enemies: favoredEnemies, favored_terrain: favoredTerrain } 
+//             = levelArray1[0].class_specific;
+//             console.log("Favored Enemies: ", favoredEnemies);
+//             console.log("Favored Terrain: ", favoredTerrain);
+//         }
+//     )
+// }
+
+// const classRangerSpecificInfoLvl5 = function() {
+//     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
+//     .then(function(response) {
+//          return response.json()
+//     })
+//     .then(function(levelArray5) {
+//         console.log("After json", levelArray5);
+
+//         //tags for HTML
+//         const { 
+//             level: rangerLevel } 
+//         = levelArray1[0];
+//         console.log("Ranger Level: ", rangerLevel);
+        
+//         const {
+//             cantrips_known: level_1Cantrips, spell_slots_level_1: spellsLevel_1, spell_slots_level_2: spellsLevel_2, spell_slots_level_3: spellsLevel_3 } 
+//             = levelArray1[0].spellcasting;
+//         console.log("Level 1 Cantrip Slots: ", level_1Cantrips);
+//         console.log("Level 1 Spell Slots: ", spellsLevel_1);
+//         console.log("Level 2 Spell Slots: ", spellsLevel_2);
+//         console.log("Level 3 Spell Slots: ", spellsLevel_3);
+
+//         const {
+//             favored_enemies: favoredEnemies, favored_terrain: favoredTerrain } 
+//             = levelArray1[0].class_specific;
+//             console.log("Favored Enemies: ", favoredEnemies);
+//             console.log("Favored Terrain: ", favoredTerrain);
+//         }
+//     )
+// }
+
+//+++++++++++++++++++ END class abilites RANGER +++++++++++++++//
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// DID NOT WORK
+
+
+
+//++++++++++++++++++++++++ DID NOT WORK ++++++++++++++++++++++++++++++
+// 
 
 // const classSpecificInfo = function() {
 //     fetch("https://www.dnd5eapi.co/api/classes/wizard/levels")
