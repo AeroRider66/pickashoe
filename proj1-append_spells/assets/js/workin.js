@@ -281,6 +281,6 @@ buttonEL.addEventListener('click', rangerSpecificInfoLvl1);
 
 // All of that to say that the only realistic way to deal with this would be from the nested for loops, on both arrays and elements, and likely using objects throughout.  
 
-// If all I did was to hard code (which I really should have but got too focused on finding the for loop solutio and ran out of time).  I do have a working result that could be duplicated and slightly modified for each instance. 
+// If all I did was to hard code (which I really should have but got too focused on finding the for loop solution and ran out of time).  I do have a working result that could be duplicated and slightly modified for each instance. 
 
-// It's about 40 LOC for each iteration (I managed to recover some from my last estimate) and with that LOC per class, per level would take it to a total of 800+ LOC on the JavaScript file alone, and more on the HTML, and those would be ADDED to the current LOC cound on both of those.
+// It's about 40 LOC for each iteration (I managed to recover some from my last estimate) and with that LOC per class, per level would take it to a total of 800+ LOC on the JavaScript file alone, and more on the HTML, and those would be ADDED to the current LOC count on both of those.
